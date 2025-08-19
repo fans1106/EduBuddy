@@ -46,12 +46,12 @@ https://github.com/user-attachments/assets/c495ab35-5c02-46b1-96ae-c7b876fed898
 
    - **`src\api\index.js line107`**  
      替换为 COZE 平台中 **EduBuddy 工作流的 `workflow_id`**。  
-     👉 获取方式：参考 [COZE 官方文档](https://www.coze.cn/open/docs/developer_guides/workflow_run)，在调用接口时，Header 授权后，Body params 中的 `workflow_id` 会显示 EduBuddy 工作流 ID，将其填入这里。
+     👉 获取方式：参考 [COZE 官方文档](https://www.coze.cn/open/docs/developer_guides/workflow_run)，在调用接口时，Header 授权后，在Body params 中的 `workflow_id` 选择 EduBuddy 工作流，右侧面板会显示workflow_id。
 
    - **`src\api\index.js line112`**  
      替换为你的 **COZE 授权 Token**。注意这里必须带上 `Bearer ` 前缀，格式如下：  
      ```http
-     Authorization: Bearer <your_token>
+     Authorization: 'Bearer <your_token>'
      ```
 
    ⚠️ 注意：不要遗漏 `Bearer`，否则会报 401 Unauthorized。
