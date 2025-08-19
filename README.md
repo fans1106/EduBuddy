@@ -30,7 +30,9 @@ https://github.com/user-attachments/assets/c495ab35-5c02-46b1-96ae-c7b876fed898
 1. 克隆本仓库至本地
 2. 安装必要的依赖
     ```bash
-    npm i
+    cd EduBuddy
+    npm install
+
     ```
 3. 替换以下文件中的`accesstoken`
     ```plaintext
