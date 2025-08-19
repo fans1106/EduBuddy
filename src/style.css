@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #4CAF50;
+  --primary-light: #C8E6C9;
+  --primary-dark: #2E7D32;
+  --accent-color: #FFA726;
+  --accent-light: #FFCC80;
+  --accent-dark: #E65100;
+  --text-primary: #2B4255;
+  --text-secondary: #5A7D8C;
+  --background-gradient: linear-gradient(120deg, #c9f5d2 0%, #f7f9c2 100%);
+  --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  --border-radius: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "PingFang SC", "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+  min-height: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+button:focus {
+  outline: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animated {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.slideUp {
+  animation: slideUp 0.5s ease-out;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+  background: rgba(76, 175, 80, 0.4);
+  border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(76, 175, 80, 0.6);
+}
