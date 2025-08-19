@@ -32,7 +32,6 @@ https://github.com/user-attachments/assets/c495ab35-5c02-46b1-96ae-c7b876fed898
     ```bash
     cd EduBuddy
     npm install
-
     ```
 3. 替换以下文件中的`accesstoken`
     ```plaintext
